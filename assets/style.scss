@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    .toolbox{
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        background-color: grey;
+
+        .toolbox-color-container{
+            
+            margin-left: 2rem;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            display: flex;
+            align-items: center;
+            height: 3.5rem;
+            background-color: rgb(84, 83, 83);            
+    
+            div{
+                height: 1.5rem;
+                width: 3rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(4, 62, 62);
+                } 
+            }
+    
+            .lightblue{
+                background-color: lightblue;
+            }
+            .lightgreen{
+                background-color: lightgreen;
+                margin-left: 2rem;
+            }
+            .orange{
+                background-color: orange;
+                margin-left: 2rem;
+            }
+            .black{
+                background-color: black;
+                margin-left: 2rem;
+            }
+        }
+
+        .action-btn-container{
+            margin-left: 2rem;
+            background-color: rgb(84, 83, 83);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.5rem;
+
+            div{
+                height: 2rem;
+                width: 3rem;
+                cursor: pointer;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.75rem;
+                font-weight: 800;
+                color: aliceblue;
+                padding: 1rem;
+                &:hover{
+                    background-color: rgb(4, 62, 62);
+                }
+            }
+
+            .add-btn{
+                width: 50%;
+                height: 100%;
+            }
+
+            .remove-btn{
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    position: relative;
+    .modal-container{
+        display: flex;
+        position: absolute;
+        height: 40vh;
+        width: 40vw;
+        top: 30vh;
+        left: 30vw;
+
+        textarea{
+            width: 75%;
+            background-color: rgb(227, 227, 227);
+            outline: none;
+            border: none;
+            resize: none;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        .color-container{
+            width: 25%;
+            height: 100%;
+            background-color: rgb(85, 85, 85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            div{
+                height: 2rem;
+                width: 4rem;
+                cursor: pointer;
+            }
+
+            .lightblue{
+                background-color: lightblue;
+            }
+            .lightgreen{
+                background-color: lightgreen;
+                margin-top: 2rem;
+            }
+            .orange{
+                background-color: orange;
+                margin-top: 2rem;
+            }
+            .black{
+                background-color: black;
+                margin-top: 2rem;
+            }
+
+            .active{
+                border: 4px solid red;
+            }
+        }
+
+    }    
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  color: rgb(85, 85, 85);
+}
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}
